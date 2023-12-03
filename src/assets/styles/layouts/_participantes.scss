@@ -1,0 +1,29 @@
+/* Participantes*/
+.main-content-participantes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.player-card {
+  flex: 0 0 calc(33.33% - 20px);
+  /* Ajusta el ancho para mostrar 3 jugadores por fila en PC */
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+.player-card__image img {
+  width: 100%;
+  height: auto;
+}
+
+.player-card__name {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.player-card__description {
+  font-size: 1em;
+}

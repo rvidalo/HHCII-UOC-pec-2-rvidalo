@@ -1,145 +1,28 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liga de Tenis</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-            min-height: 100vh;
-            background-color: #f3f4f6;
-        }
-
-        @supports not (display: grid) {
-            body {
-                display: block;
-            }
-        }
-
-        .header, .footer {
-            background-color: #ffffff;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        .main-content {
-            display: grid;
-            place-items: center;
-            padding: 2rem;
-        }
-
-        @supports not (display: grid) {
-            .main-content {
-                display: block;
-                padding: 2rem;
-            }
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            color: #4a5568;
-        }
-
-        .nav-links {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .nav-links li {
-            padding: 0.5rem 1rem;
-            color: #4a5568;
-        }
-
-        .image-placeholder {
-            width: 200px;
-            height: 200px;
-            background-color: #edf2f7;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #4299e1;
-            border: 2px dashed #4299e1;
-            margin-bottom: 2rem;
-        }
-
-        .image-placeholder i {
-            font-size: 4rem;
-        }
-
-        .title {
-            font-size: 2rem;
-            color: #2d3748;
-            margin: 0;
-        }
-
-        .subtitle {
-            color: #718096;
-            margin-top: 0.5rem;
-        }
-
-        .footer-text {
-            color: #718096;
-            font-size: 0.875rem;
-        }
-
-        .social-icons {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .social-icons li {
-            color: #4a5568;
-        }
-
-        .social-icons li i {
-            font-size: 1.25rem;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">LOGO</div>
-        <ul class="nav-links">
-            <li>Front Page</li>
-            <li>Page Two</li>
-            <li>Page Three</li>
-            <li>Page Four</li>
-        </ul>
-    </header>
+    <include src="./views/header.html"></include>
 
-    <div class="main-content">
-        <div class="image-placeholder">
-            <i class="fas fa-image"></i>
+    <main>
+        <h1>Club las salinas</h1>
+        <h2>Liga de tenis</h2>
+        <hr>
+        <p class="about">La Liga de Tenis es un emocionante torneo que reúne a los mejores jugadores de todo el mundo. Con
+            una larga historia y tradición, este evento anual es un hito en el mundo del tenis</p>
+        <img src="./assets/images/cesped.webp" alt="Pista de cesped">
+        <div class="location">
+            <p>Enero - Junio de 2024<br>Cádiz, Club las salinas</p>
         </div>
-        <h1 class="title">Tennis club name or catchy phrase here</h1>
-        <p class="subtitle">This will be a creative front page poster made with CSS Grid.<br>Maybe include links here?</p>
-    </div>
+    </main>
 
-    <footer class="footer">
-        <p class="footer-text">This is the footer. Should it include contact information?</p>
-        <ul class="social-icons">
-            <li><i class="fab fa-google"></i></li>
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-        </ul>
-    </footer>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
 </html>
-```
