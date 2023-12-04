@@ -1,17 +1,15 @@
-/* Participantes*/
+/* Contenedor principal */
 .main-content-participantes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
+/* Estilos para cada tarjeta de jugador */
 .player-card {
-  flex: 0 0 calc(33.33% - 20px);
-  /* Ajusta el ancho para mostrar 3 jugadores por fila en PC */
-  margin: 10px;
-  padding: 15px;
-  text-align: center;
-  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  width: calc(33.33% - 20px);
+  padding: 1rem 4rem;
 }
 
 .player-card__image img {
@@ -26,4 +24,17 @@
 
 .player-card__description {
   font-size: 1em;
+}
+
+/* Media queries para ajustar el diseño en diferentes dispositivos */
+@media screen and (max-width: 1024px) {
+  .player-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .player-card {
+    width: 100%;
+  }
 }

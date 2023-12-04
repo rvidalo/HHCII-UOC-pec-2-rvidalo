@@ -1,8 +1,8 @@
 /* Header y Footer*/
 .footer {
   background-color: $hhcii-white;
-  ;
   text-align: center;
+  margin-top: 3.5rem;
 }
 
 .footer__text {
@@ -97,11 +97,6 @@
     text-align: center;
     margin: 1rem 2rem;
   }
-
-  .player-card {
-    flex: 0 0 calc(50% - 20px);
-    /* Ajusta el ancho para mostrar 2 jugadores por fila en tablet */
-  }
 }
 
 /* Media queries para móvil */
@@ -120,10 +115,5 @@
   .nav-links li {
     display: block;
     margin-bottom: 10px;
-  }
-
-  .player-card {
-    flex: 0 0 100%;
-    /* Muestra 1 jugador por fila en móvil */
   }
 }
