@@ -89,7 +89,7 @@
 }
 
 /* Media queries para tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $tabletMaxWidth) {
 
   .footer__content,
   .header__content {
@@ -100,7 +100,7 @@
 }
 
 /* Media queries para móvil */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: $movilMaxWidth) {
 
   .footer__content,
   .header__content {
